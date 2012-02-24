@@ -48,9 +48,9 @@ another_valid_____
 <=
 >=
 &
-{
-,
 }
+,
+{
 (
 )
 \
@@ -67,10 +67,10 @@ abc_
 "unterminated
 "unterminated2 \"
 "backslash \ "
-"bad escaped char \a
+"bad escaped char \a 
 /*GOOD COMMENT */
 "before nested"
-/* nested /* comment */
+/* nested /* comment */ 
 "after"
 /* UNTERMINATED
 /* * */

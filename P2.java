@@ -1,3 +1,8 @@
+// Partners: Cara Lauritzen & Radford Smith
+// This code uses inTokens as an input, and produces inTokens.out and
+// observedNum.out. A diff can be used to check observedNum.out 
+// against expectedNum.out to make sure LineNum and CharNum are correct.
+
 // This program is to be used to test the Little scanner.
 // This version is set up to test all tokens, but more code is
 // needed to test other aspects of the scanner (e.g., input that
@@ -13,7 +18,7 @@ class P2 {
 	// test all tokens
 	testAllTokens();
 	CharNum.num = 1;
-
+	
 	// ADD CALLS TO OTHER TEST METHODS HERE
     }
 
@@ -31,9 +36,12 @@ class P2 {
 	// open input and output files
 	FileReader inFile = null;
 	PrintWriter outFile = null;
+	PrintWriter outFile2 = null;
+
 	try {
 	    inFile = new FileReader("inTokens");
 	    outFile = new PrintWriter(new FileWriter("inTokens.out"));
+			outFile2 = new PrintWriter(new FileWriter("observedNum.out"));
 	} catch (FileNotFoundException ex) {
 	    System.err.println("File inTokens not found.");
 	    System.exit(-1);
@@ -46,6 +54,8 @@ class P2 {
 	Yylex scanner = new Yylex(inFile);
 	Symbol token = scanner.next_token();
 	while (token.sym != sym.EOF) {
+		TokenVal val = (TokenVal)token.value;
+		outFile2.println("Line " + val.linenum + " Char " + val.charnum);
 	    switch (token.sym) {
 	    case sym.INT:
 		outFile.println("int");
@@ -76,6 +86,7 @@ class P2 {
 		break;
 	    case sym.ID:
 		outFile.println(((IdTokenVal)token.value).idVal);
+		outFile2.println("ID found " + ((IdTokenVal)token.value).idVal);
 		break;
 	    case sym.INTLITERAL:
 		outFile.println(((IntLitTokenVal)token.value).intVal);
@@ -166,5 +177,6 @@ class P2 {
 	    token = scanner.next_token();
 	}
 	outFile.close();
+  outFile2.close();
     }
 }
