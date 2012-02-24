@@ -1,0 +1,20 @@
+int x; double;
+y = 7.2;
+if else y = 2;
+while "string is here";
+return void;
+scanf("use \n to denote a new ling character");
+printf("test string characters \" \t \' \" \\");
+"a" "%d" "%f" , + - * / ++ -- ! && || == != < > <= >= &
+{x,y}
+
+/*COMMENT SHOULDN'T APPEAR */
+
+"unterminated
+"unterminated2 \"
+"backslash \ "
+"bad escaped char \a "
+
+
+
+

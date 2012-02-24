@@ -1,0 +1,6 @@
+1) & token turns into && token -- line 50 of inTokens
+2) doesn't allow underscores to start identifier names, just gives an error instead -- line 12 of inTokens
+3) empty strings cause an error -- line 27 of inTokens
+4) can't have any * or / in comments, places a / in output -- line 76-77 of inTokens
+5) doesn't correctly add the CharNum for comments -- line 79  of inTokens and 77 of observedNum
+6) doesn't correctly add the CharNum for strings -- line 30 of inTokens and 35 of observedNum

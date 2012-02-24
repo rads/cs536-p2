@@ -1,0 +1,79 @@
+int
+void
+double
+if
+else
+while
+return
+scanf
+printf
+identifier
+a_4_2_id
+_validid
+another_valid_____
+"%d"
+"%f"
+324234324234234234234234324324234234234324234324234324286575254
+-567343
+766545.20464
+.77545544
+0.5
+7.
+"\n"
+"\t"
+"\'"
+"\""
+"\\"
+""
+"&!88"
+"int"
+"scanf" (
+"use \n to denote a new line character"
+"include \" and \\"
+	
+"tab above"
++
+-
+*
+/
+++
+--
+!
+&&
+||
+==
+!=
+<
+>
+<=
+>=
+&  
+{
+,
+}
+(
+)
+\
+/* * */
+/* / */ 
+ZZZ99
+@
+523__
+_4_
+__
+_
+x_56
+abc_
+"unterminated
+"unterminated2 \"
+"backslash \ "
+"bad escaped char \a 
+/*GOOD COMMENT */
+"before nested"
+/* nested /* comment */ 
+"after"
+/* UNTERMINATED
+/* * */
+/* / */
+@@@@@intdouble
+/*afeafeafe*/double
