@@ -72,8 +72,8 @@ abc_
 "before nested"
 /* nested /* comment */ 
 "after"
-/* UNTERMINATED
 /* * */
 /* / */
 @@@@@intdouble
 /*afeafeafe*/double
+/* UNTERMINATED

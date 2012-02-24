@@ -357,6 +357,10 @@ return new Symbol(sym.EOF);
     return S;
 }
 
+/\*[^\*/]* {
+    Errors.fatal(yyline+1, CharNum.num, "unterminated comment");
+}
+
 {COMMENT} {
     CharNum.inc(yytext());
 }
