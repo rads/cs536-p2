@@ -1,0 +1,4 @@
+"unterminated \"
+"good string\n"
+"bad escaped  \a AND not terminated
+"backslash \ not allowed"
